@@ -1,0 +1,21 @@
+@media print {
+    body * {
+      visibility: hidden;
+    }
+    .print-container, .print-container * {
+      visibility: visible;
+    }
+    .print-container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8.56cm; /* Approximate width of a debit card */
+      height: 5.397cm; /* Approximate height of a debit card */
+      padding: 1cm; /* Optional padding */
+      box-sizing: border-box;
+    }
+    .print-content {
+      font-size: 10px; /* Adjust font size to fit content */
+    }
+  }
+  
