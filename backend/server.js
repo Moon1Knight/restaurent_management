@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 5000;
-const MONGODB_URI = 'mongodb+srv://zshadowknight7:dbRtEi0U0BrcvAaO@cluster1.wiycajo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1';
+const MONGODB_URI = 'YOUR_MONGO_DB_URI';
 // Connect to MongoDB
 mongoose.connect( MONGODB_URI , { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
